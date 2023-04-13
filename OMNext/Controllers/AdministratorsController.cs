@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Session;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using OMNext.Helpers;
+using System.Security.Cryptography;
 
 namespace OMNext.Controllers
 {
@@ -51,8 +53,13 @@ namespace OMNext.Controllers
         {
             try
             {
+                Helper h = new Helper();
+                Aes aes = Aes.Create();
+
+                byte[] password = h.EncryptString(administrator.Password, aes.Key, aes.IV);
+
                 var admin = _context.Administrators.Where(x => x.UserName == administrator.UserName
-                    && x.Password == administrator.Password).FirstOrDefault();
+                    && (x.Password == administrator.Password || x.Password == password.ToString())).FirstOrDefault();
 
                 if (admin != null)
                 {
@@ -116,6 +123,12 @@ namespace OMNext.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    Helper h = new Helper();
+                    Aes aes = Aes.Create();
+
+                    byte[] password = h.EncryptString(administrator.Password, aes.Key, aes.IV);
+                    administrator.Password = password.ToString();
+
                     _context.Add(administrator);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
@@ -171,12 +184,15 @@ namespace OMNext.Controllers
             }
 
             var adminToUpdate = _context.Administrators.SingleOrDefault(s => s.AdministratorID == administratorID);
+            Helper h = new Helper();
+            Aes aes = Aes.Create();
+
             if (await TryUpdateModelAsync<Administrator>(adminToUpdate,
                     "",
                     s => s.FirstName,
                     s => s.LastName,
                     s => s.UserName,
-                    s => s.Password))
+                    s => h.EncryptString(s.Password, aes.Key, aes.IV).ToString()))
             {
                 try
                 {

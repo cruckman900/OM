@@ -33,6 +33,9 @@ namespace OMNext.Controllers
         [HttpPost]
         public async Task<JsonResult> InsertChatMessage(Chat oChat)
         {
+            Helper h = new Helper();
+            Aes aes = Aes.Create();
+
             oChat.SentDateTime = DateTime.Now;
 
             _context.Chats.Add(oChat);

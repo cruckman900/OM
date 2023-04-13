@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using OMNext.Data;
 using OMNext.Hubs;
+using System.Resources;
 
 namespace OMNext
 {
@@ -29,7 +23,7 @@ namespace OMNext
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<OM2018Context>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("TestConnection")));  // set to DefaultConnection for deployed application, TestConnection for local DB
 
             services.AddCors(o => o.AddPolicy("AllowAllPolicy", builder =>
             {
@@ -63,7 +57,8 @@ namespace OMNext
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                //app.UseExceptionHandler("/Home/Error");
+                app.UseDeveloperExceptionPage();
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }

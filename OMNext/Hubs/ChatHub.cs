@@ -22,10 +22,6 @@ namespace OMNext.Hubs
             _env = env;
         }
 
-        // group, UserAgent and missionID are synonymous. I made a group based on the running mission
-        // so that all chat and data stay within that mission's scope. UserAgent was a field in a table
-        // from an example I had found online to store connections. I use it to store the missionID.
-
         /// <summary>
         /// Add the user to the group
         /// </summary>

@@ -1,0 +1,329 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\altHurricaneData.xml",
+      "PackagePath": "staticwebassets\\App_Data\\altHurricaneData.xml"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\archivedHurData.txt",
+      "PackagePath": "staticwebassets\\App_Data\\archivedHurData.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\archivedVolData.txt",
+      "PackagePath": "staticwebassets\\App_Data\\archivedVolData.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\commPostbrief.txt",
+      "PackagePath": "staticwebassets\\App_Data\\commPostbrief.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\evacPostbrief.txt",
+      "PackagePath": "staticwebassets\\App_Data\\evacPostbrief.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\evacShelters.txt",
+      "PackagePath": "staticwebassets\\App_Data\\evacShelters.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\hurcPostbrief.txt",
+      "PackagePath": "staticwebassets\\App_Data\\hurcPostbrief.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\medcommBriefing.txt",
+      "PackagePath": "staticwebassets\\App_Data\\medcommBriefing.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\medcommBulletin.txt",
+      "PackagePath": "staticwebassets\\App_Data\\medcommBulletin.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\medcommPostbrief.txt",
+      "PackagePath": "staticwebassets\\App_Data\\medcommPostbrief.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\rtHurricaneData.xml",
+      "PackagePath": "staticwebassets\\App_Data\\rtHurricaneData.xml"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\rtMedComData.xml",
+      "PackagePath": "staticwebassets\\App_Data\\rtMedComData.xml"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\rtVolcanoData.xml",
+      "PackagePath": "staticwebassets\\App_Data\\rtVolcanoData.xml"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\App_Data\\volcPostbrief.txt",
+      "PackagePath": "staticwebassets\\App_Data\\volcPostbrief.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\android-chrome-96x96.png",
+      "PackagePath": "staticwebassets\\android-chrome-96x96.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\20.15z.Color.JPG",
+      "PackagePath": "staticwebassets\\assets\\images\\20.15z.Color.JPG"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\20.315z.Color.JPG",
+      "PackagePath": "staticwebassets\\assets\\images\\20.315z.Color.JPG"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\20.745z.Color.JPG",
+      "PackagePath": "staticwebassets\\assets\\images\\20.745z.Color.JPG"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\WaterStations.png",
+      "PackagePath": "staticwebassets\\assets\\images\\WaterStations.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\outline.png",
+      "PackagePath": "staticwebassets\\assets\\images\\outline.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\outline_pop.png",
+      "PackagePath": "staticwebassets\\assets\\images\\outline_pop.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\outline_pop_phys.png",
+      "PackagePath": "staticwebassets\\assets\\images\\outline_pop_phys.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\physmap.png",
+      "PackagePath": "staticwebassets\\assets\\images\\physmap.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\pop_phys.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pop_phys.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\popdense.png",
+      "PackagePath": "staticwebassets\\assets\\images\\popdense.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\assets\\images\\radar_277x187_legend.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\radar_277x187_legend.gif"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\browserconfig.xml"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\images\\MedCommBriefingDiagram.png",
+      "PackagePath": "staticwebassets\\images\\MedCommBriefingDiagram.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\images\\OMLogo.png",
+      "PackagePath": "staticwebassets\\images\\OMLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\js\\chat.js",
+      "PackagePath": "staticwebassets\\js\\chat.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\js\\evacCanvas.js",
+      "PackagePath": "staticwebassets\\js\\evacCanvas.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\mstile-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\site.webmanifest",
+      "PackagePath": "staticwebassets\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\cruck\\Downloads\\OMNext\\OMNext\\wwwroot\\videos\\lavaflow.mp4",
+      "PackagePath": "staticwebassets\\videos\\lavaflow.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.OMNext.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.OMNext.props",
+      "PackagePath": "build\\OMNext.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.OMNext.props",
+      "PackagePath": "buildMultiTargeting\\OMNext.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.OMNext.props",
+      "PackagePath": "buildTransitive\\OMNext.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

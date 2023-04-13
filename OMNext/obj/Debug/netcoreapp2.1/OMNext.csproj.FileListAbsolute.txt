@@ -1,0 +1,7 @@
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.csproj.AssemblyReference.cache
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.Properties.Resources.resources
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.csproj.GenerateResource.cache
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.AssemblyInfoInputs.cache
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.AssemblyInfo.cs
+C:\Users\cruck\Downloads\OMNext\OMNext\obj\Debug\netcoreapp2.1\OMNext.csproj.CoreCompileInputs.cache

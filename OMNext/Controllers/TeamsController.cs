@@ -33,6 +33,7 @@ namespace OMNext.Controllers
         {
             ViewData["Team"] = "hide navbar links";
             ViewData["Message"] = "Team Login";
+
             return View();
         }
 

@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-This file is used by the publish/package process of your Web project. You can customize the behavior of this process
-by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+https://go.microsoft.com/fwlink/?LinkID=208121. 
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\inetpub\wwwroot\mon</_PublishTargetUrl>
-    <History>True|2022-02-04T05:38:56.0313043Z;False|2022-02-04T00:37:35.8216498-05:00;False|2022-02-04T00:34:12.8719667-05:00;False|2022-02-03T23:59:45.0932860-05:00;False|2022-02-03T23:57:04.9189648-05:00;True|2022-01-30T17:56:40.2325241-05:00;True|2022-01-30T17:25:01.7440421-05:00;True|2022-01-30T17:22:52.0290261-05:00;True|2022-01-30T17:20:18.8161796-05:00;True|2022-01-30T16:43:52.0734945-05:00;False|2022-01-30T16:42:20.7444872-05:00;False|2022-01-30T16:04:13.0292622-05:00;False|2022-01-23T05:51:08.3252756-05:00;False|2022-01-23T05:23:41.8513460-05:00;True|2022-01-22T23:48:46.4384247-05:00;False|2022-01-22T23:39:28.2425369-05:00;</History>
+    <History>True|2023-03-14T17:37:16.9271367Z;True|2022-10-18T15:56:57.8708610-04:00;False|2022-10-18T15:53:57.9007500-04:00;True|2022-09-29T14:21:27.7774631-04:00;True|2022-09-28T03:13:35.1399488-04:00;False|2022-09-28T03:11:40.2753827-04:00;True|2022-09-28T02:56:09.0573441-04:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">
-      <Value>Data Source=MSI\SQLEXPRESS01%3bInitial Catalog=OM2018%3bIntegrated Security=True</Value>
+      <Value>Server=198.185.178.183%3bDatabase=mon%3buser id=monclc%3bpassword=CLC2019!%3b</Value>
     </DestinationConnectionStrings>
   </ItemGroup>
 </Project>

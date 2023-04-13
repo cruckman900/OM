@@ -18,10 +18,13 @@
     "OperationMontserrat": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost/mon",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "sqlDebugging": true,
+      "nativeDebugging": true,
+      "applicationUrl": "http://localhost:5001;http://localhost:5000",
+      "jsWebView2Debugging": false
     }
   }
 }

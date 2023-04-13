@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Administrators";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+
+    <div class="col-md-12 bg-light opac-85 py-4">
+        <ul class="nav nav-tabs bg-white">
+            <li class="nav-item"><a data-toggle="tab" role="tab" href="#scripts" class="nav-link">Flight Director Scripts</a></li>
+            <li class="nav-item"><a data-toggle="tab" role="tab" href="#centers" class="nav-link">Registered CLC Centers</a></li>
+            <li class="nav-item"><a data-toggle="tab" role="tab" href="#admins" class="nav-link">Administrators</a></li>
+            <li class="nav-item"><a data-toggle="tab" role="tab" href="#usage" class="nav-link">Usage Per Center</a></li>
+        </ul>
+
+        <div class="tab-content border bg-white">
+            <div id="scripts" role="tabpanel" class="tab-pane">
+                <div class="mt-4">
+                    @await Component.InvokeAsync("FDScripts")
+                </div>
+            </div>
+            <div id="centers" role="tabpanel" class="tab-pane">
+                <div class="mt-4">
+                    @await Component.InvokeAsync("CLCCenters")
+                </div>
+            </div>
+            <div id="admins" role="tabpanel" class="tab-pane">
+                <div class="mt-4">
+                    @await Component.InvokeAsync("Administrators")
+                </div>
+            </div>
+            <div id="usage" role="tabpanel" class="tab-pane">
+                <div class="mt-4">
+                    @await  Component.InvokeAsync("Usage")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

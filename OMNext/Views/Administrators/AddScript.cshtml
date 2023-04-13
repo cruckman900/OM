@@ -1,0 +1,27 @@
+﻿@model OMNext.Models.Script
+@{
+    ViewData["Title"] = "Add Script";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+    <form asp-action="CreateScript">
+        <div asp-validation-summary="ModelOnly" class="danger"></div>
+        <input type="hidden" asp-for="CreatedOnDate" value="@DateTime.Now" />
+        @{ await Html.RenderPartialAsync("_ScriptEditorFormPartial"); }
+    </form>
+</div>"
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: "textarea",
+            plugins: "textcolor code",
+            toolbar: "fontsizeselect forecolor backcolor code",
+            fontsize_formats: "8pt 10pt 12pt 14pt 18pt 24pt 36pt",
+        });
+    </script>
+}

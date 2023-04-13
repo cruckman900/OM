@@ -1,0 +1,34 @@
+﻿<div class="col-12">
+	<h4><font color="#DB3B21">Emergency Briefings and Bulletins</font></h4>
+	<p>Follow the prompts on the interface to help you organize the information for emergency briefings and bulletins. Briefings are given orally (radio/TV broadcast or podcast), and bulletins use written information (text messages, flyers, scripts). During the mission, you will be giving one 3-minute midpoint briefing, one 3-minute endpoint briefing, and will be creating several online bulletins.</p>
+</div>
+<div class="col-6 float-left">
+	<b>Sample Broadcast</b>
+	<p>This is Buck Grimbaldi coming to you live from Broderick's Estate where a storage barn has been blown over by a gust of wind estimated at over 150 kilometers an hour. As you can see, this barn, on the edge of Aymer's Ghaut has spilled a massive quantity of fertilizer into the waterway, creating a chemical hazard for humans and livestock downstream. Drinking or touching the water could be extremely hazardous. Montserrat Emergency Services has declared a chemical emergency and is sending hazmat crews to clean up the spill. In the meantime, residents are being warned to stay away from the waterways downstream and not to drink or use the water until further notice. Updates will be available on this broadcast station as the situation changes.</p>
+</div>
+<div class="col-6 float-left">
+	<b>Sample Bulletin</b>
+	<p>Alert: All residents in the vicinity of Broderick's Estate, Trials, and Aymer's Ghaut. A storage barn near Broderick's Estate has been blown over by a gust of wind estimated at over 150 kilometers an hour. The accident has spilled a massive quantity of fertilizer into the waterway, creating a chemical hazard for humans and livestock downstream. Drinking or touching the water could be extremely hazardous. Montserrat Emergency Services has declared a chemical emergency and is sending hazmat crews to clean up the spill. In the meantime, residents are being warned to stay away from the waterways downstream and not to drink or use the water until further notice. Updates will be available as the situation changes. Flyers will be posted in every public building.</p>
+</div>
+<div class="col-12" style="clear: both">
+	<p>As you can see from the example above, every important emergency notice has several parts:</p>
+	<ul>
+		<li><u>Headline</u>: This will be displayed at the top of the bulletin or broadcast.</li>
+		<li><u>Context</u>: Where is this taking place, and who should pay attention? Who is affected more?</li>
+		<li><u>Situation/Hazard</u>: What has happened? What is the danger or hazard? What are the medical issues?</li>
+		<li><u>Remedy</u>: How can the danger or hazard be avoided? What medical advice or treatment is available to reduce the impact of the situation?</li>
+		<li><u>Knowledge</u>: Explain key terms. Educate your audience so they fully understand the full scope of the hazard. Explain who is in charge and what is being done. Describe symptoms that may occur or provide an example of things to look for in evaluating the medical issues that may be present.</li>
+		<li><u>Future</u>: What will happen next? When will the situation get better or worse?</li>
+		<li><u>More Information</u>: Explain where and when more information will be made available.</li>
+	</ul>
+</div>
+<div class="col-12">
+	<p><b>Types of Media Release:</b></p>
+	<ul>
+		<li>Flyers (Distributed slowly using runners across the island. Will reach the most people)</li>
+		<li>Text-messaging (Distributed quickly. Allows for real-time updates. Limited to those who have cell phones and cell phone reception in the mountains)</li>
+		<li>Radio Broadcast (Distributed quickly. Allows for real-time updates. Limited to those who have radios with batteries)</li>
+		<li>Online Podcast (Distributed quickly to computers and cell phones. Allows for frequent updates. Limited to those who have computers and electricity for downloads or those who have cell phones and cell phone reception in the mountains)</li>
+		<li>Television Broadcast (Distributed quickly. Allows for real-time updates. Limited to those who have electricity, televisions and can get TV signal reception)</li>
+	</ul>
+</div>

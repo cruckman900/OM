@@ -1,0 +1,135 @@
+﻿@model IEnumerable<OMNext.Models.DataDriveData>
+@{
+    ViewData["Title"] = "Communications";
+    ViewBag.Password = ViewData["Password"];
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+</div>
+<div class="container py-2" style="overflow-y: hidden">
+    <div class="row">
+        <div class="col col-7 opac-85">
+            <div id="VolcDataEntry">
+                <table id="tblVolcDataEntry" class="border">
+                    <tr>
+                        <th>GMT</th>
+                        <th>Hourly VT</th>
+                        <th>Cumul VT</th>
+                        <th>Proj VT</th>
+                        <th>Hourly RF</th>
+                        <th>Cumul RF</th>
+                        <th>Proj RF</th>
+                        <th>T Seismic</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="GMT">
+                                <option></option>
+                                <option>00:00</option>
+                                <option>01:00</option>
+                                <option>02:00</option>
+                                <option>03:00</option>
+                                <option>04:00</option>
+                                <option>05:00</option>
+                                <option>06:00</option>
+                                <option>07:00</option>
+                                <option>08:00</option>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                            </select>
+                        </td>
+                        <td><input type="text" id="HourlyVT" /></td>
+                        <td><input type="text" id="CumulVT" /></td>
+                        <td><input type="text" id="ProjVT" /></td>
+                        <td><input type="text" id="HourlyRF" /></td>
+                        <td><input type="text" id="CumulRF" /></td>
+                        <td><input type="text" id="ProjRF" /></td>
+                        <td><input type="text" id="TSeismic" /></td>
+                    </tr>
+                </table>
+                <button id="btnSendVolcData" class="bg-warning w-100">Send Volcano Data</button>
+            </div>
+            <div id="VolcDataDriveData" class="opac-85">@await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "Volcano" })</div>
+            <div id="HurcDataEntry" class="pt-4">
+                <table id="tblHurcDataEntry" class="border">
+                    <tr>
+                        <th>ADV</th>
+                        <th>Lat</th>
+                        <th>Lng</th>
+                        <th>Cat</th>
+                        <th>Dist Trav</th>
+                        <th>Speed</th>
+                        <th>Direction</th>
+                        <th>Dist Isl</th>
+                        <th>ETA</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="ADV">
+                                <option></option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                                <option>32</option>
+                                <option>33</option>
+                                <option>34</option>
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                            </select>
+                        </td>
+                        <td><input type="text" id="Lat" /></td>
+                        <td><input type="text" id="Lng" /></td>
+                        <td>
+                            <select id="Cat">
+                                <option></option>
+                                <option>Cat 1</option>
+                                <option>Cat 2</option>
+                                <option>Cat 3</option>
+                                <option>Cat 4</option>
+                                <option>Cat 5</option>
+                            </select>
+                        </td>
+                        <td><input type="text" id="DistTrav" /></td>
+                        <td><input type="text" id="Speed" /></td>
+                        <td><input type="text" id="Direction" /></td>
+                        <td><input type="text" id="DistIsl" /></td>
+                        <td><input type="text" id="ETA" /></td>
+                    </tr>
+                </table>
+                <button id="btnSendHurcData" class="bg-warning w-100">Send Hurricane Data</button>
+            </div>
+            <div id="HurcDataDriveData" class="opac-85">@await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "Hurricane" })</div>
+            <div id="EvacDataDriveData" class="opac-85 mt-4">@await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "Evacuation" })</div>
+
+            @{ if ((bool)TempData.Peek("HasMedComm"))
+                {
+                    <div id="MedCommDataDriveData" class="bg-white opac-85 mt-4" style="overflow-y: auto">
+                        @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "MedComm" })
+                    </div>
+                }
+            }
+        </div>
+        <div id="CommChat" class="h-100 w-100 col col-5 border bg-white opac-85 p-2" style="overflow-y: hidden; overflow-x: hidden;">@await Component.InvokeAsync("TeamChat", new { MissionID = ViewData["MissionID"] })</div>
+    </div>
+</div>
+<partial name="_MedCommBulletin" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        InitInterface('@ViewBag.Password');
+    });
+</script>

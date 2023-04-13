@@ -1,0 +1,70 @@
+﻿@model OMNext.Models.CLCCenter
+
+<div class="col-md-12 pt-2 bg-light opac-85 pb-2">
+    <div class="row">
+        <div class="form-group col-md-9">
+            <label asp-for="CenterName" class="control-label"></label>
+            <input asp-for="CenterName" class="form-control" />
+            <span asp-validation-for="CenterName" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Abbreviation" class="control-label"></label>
+            <input asp-for="Abbreviation" class="form-control" />
+            <span asp-validation-for="Abbreviation" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label asp-for="Address1" class="control-label"></label>
+            <input asp-for="Address1" class="form-control" />
+            <span asp-validation-for="Address1" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label asp-for="Address2" class="control-label"></label>
+            <input asp-for="Address2" class="form-control" />
+            <span asp-validation-for="Address2" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-8">
+            <label asp-for="City" class="control-label"></label>
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="State" class="control-label"></label>
+            <input asp-for="State" class="form-control" />
+            <span asp-validation-for="State" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="Zipcode" class="control-label"></label>
+            <input asp-for="Zipcode" class="form-control" />
+            <span asp-validation-for="Zipcode" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label asp-for="Phone" class="control-label"></label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="IsActive" class="control-label"></label>
+            @Html.CheckBoxFor(m => m.IsActive)
+            <span asp-validation-for="IsActive" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="HasAccessToMedComm" class="control-label"></label>
+            @Html.EditorFor(m => m.HasAccessToMedComm)
+            <span asp-validation-for="HasAccessToMedComm" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+        <input type="button" class="btn btn-default" value="Go Back" onclick="location.href='@Url.Action("Index", "Administrators")'" />
+    </div>
+</div>

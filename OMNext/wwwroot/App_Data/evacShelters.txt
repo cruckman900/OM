@@ -1,0 +1,27 @@
+<h4><font color="#DB3B21">Shelters</font></h4>
+<p>The following are possible evacuation sites:</p>
+<ul>
+	<li>St. John’s, with a usual population of about 1000;</li>
+	<li>Davy Hills with a population of about 500;</li>
+	<li>Geralds with a population of 500;</li>
+	<li>Salem with a population of 1000;</li>
+	<li>Cork Hill has a usual population of just over 1000</li>
+	<li>Bransby Point also has a population of about 1000</li>
+	<li>Hospitals and the Fire Dept. are both based in Plymouth</li>
+</ul>
+<p>There are several buildings suitable or adaptable for shelter on the northern part of the island. They include:</p>
+<ul>
+	<li>Pentecostal Church in St. John’s (capacity of about 200 people)</li>
+	<li>Cavalla Methodist Church in St. John’s</li>
+	<li>St. Augustine School in Salem (currently serving 40 students)</li>
+	<li>Montserrat Secondary School at St. Johns</li>
+</ul>
+<p>In addition to the above, there are also:</p>
+<ul>
+	<li>Various rental villas (3-4 bedrooms) and apartments in Bransby Point</li>
+	<li>An 18 room hotel under construction in Little Bay Beach (on the western coast near Davy Hill)</li>
+	<li>The Vue Pointe Hotel that consists of 20 small villas on Old Bay Road overlooking the ocean between Cork Hill and Old Towne</li>
+	<li>A supermarket in Davy Hill</li>
+	<li>A radio/TV transmission building near Geralds</li>
+	<li>A recording studio in Salem Condominiums on the western and higher elevation end of Cork Hill</li>
+</ul>

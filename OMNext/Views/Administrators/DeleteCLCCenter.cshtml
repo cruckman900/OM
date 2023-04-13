@@ -1,0 +1,29 @@
+﻿@model OMNext.Models.CLCCenter
+@{
+    ViewData["Title"] = "Delete CLC Center";
+}
+
+<div class="container">
+    <h2 class="light-text">Delete CLC Center</h2>
+
+    <div class="col-md-12 pt-2 bg-light opac-85 pb-2">
+        <p class="text-danger">@ViewData["ErrorMessage"]</p>
+        <h3>Are you sure you want to delete this CLC Center?</h3>
+        <div>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.CenterName)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.CenterName)
+                </dd>
+            </dl>
+
+            <form asp-action="DeleteCLCCenter">
+                <input type="hidden" asp-for="CLCCenterID" />
+                <input type="submit" value="Delete CLC Center" class="btn btn-primary" />
+                <input type="button" class="btn btn-default" value="Go Back" onclick="location.href='@Url.Action("Index", "Administrators")'" />
+            </form>
+        </div>
+    </div>
+</div>

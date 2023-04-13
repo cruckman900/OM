@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<style>
+    input { width: 125px; }
+</style>
+
+<div class="d-flex flex-row">
+    <div class="col-sm-4">
+        <input type="button" id="sendArchivedData" value="Archived Data" class="btn-xs bg-warning" />
+    </div>
+    <div class="col-sm-4">
+        <input type="button" id="sendVolcVideo" value="Volcano Video" class="btn-xs bg-warning" />
+    </div>
+    <div class="col-sm-4">
+        <input type="button" id="sendPostBrief" value="Post Brief" class="btn-xs bg-warning" />
+    </div>
+</div>
+<div class="d-flex flex-row mt-4">
+    <div class="col-sm-4">
+        <input type="number" id="volcInterval" class="pl-2" placeholder="Volc Interval" step="1" min="3" max="10" />
+    </div>
+    <div class="col-sm-4">
+        <input type="number" id="hurcInterval" class="pl-2" placeholder="Hurc Interval" step="1" min="3" max="10" />
+    </div>
+    @{ if ((bool)TempData.Peek("HasMedComm"))
+        {
+            <div class="col-sm-4">
+                <input type="number" id="medcommInterval" class="pl-2" placeholder="MedC Interval" step="1" min="3" max="10" />
+            </div>
+        }
+    }
+</div>
+<div class="d-flex flex-row">
+    <div class="col-sm-4">
+        <input type="button" id="sendVolcData" value="Send Volc Data" class="btn-xs bg-danger" />
+    </div>
+    <div class="col-sm-4">
+        <input type="button" id="sendHurcData" value="Send Hurc Data" class="btn-xs bg-info" />
+    </div>
+    @{ if ((bool)TempData.Peek("HasMedComm"))
+        {
+            <div class="col-sm-4">
+                <input type="button" id="sendMCData" value="Send MedC Data" class="btn-xs bg-secondary" />
+            </div>
+        }
+    }
+</div>

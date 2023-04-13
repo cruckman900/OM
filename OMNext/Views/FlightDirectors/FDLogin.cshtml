@@ -1,0 +1,97 @@
+﻿@model OMNext.Models.RunningMission
+@{
+    ViewData["Title"] = "Flight Director Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Title"]</h2>
+    <div class="col-md-12 pt-2 pb-2 bg-light opac-85">
+        <h3>@ViewData["Message"]</h3>
+
+        <form asp-action="FDLogin">
+            <input asp-for="MissionDate" type="hidden" />
+
+            <div class="row">
+                <div class="form-group col col-md-12">
+                    <input type="hidden" id="myEnding" asp-for="MissionEnding" />
+                </div>
+                <div class="form-group col col-md-12">
+                    <input type="hidden" id="myScript" asp-for="ScriptID" />
+                </div>
+            </div>
+
+            <div asp-validation-summary="ModelOnly" class="danger"></div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label asp-for="FlightDirector" class="control-label"></label>
+                    <input asp-for="FlightDirector" class="form-control" />
+                    <span asp-validation-for="FlightDirector" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label asp-for="Booth" class="control-label"></label>
+                    <input asp-for="Booth" class="form-control" />
+                    <span asp-validation-for="Booth" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label asp-for="CLCCenter" class="control-label"></label>
+                    <input asp-for="CLCCenter" class="form-control" />
+                </div>
+            </div>
+
+            <div id="btnOpenModal" class="row">
+                <div class="form-group col col-md-12">
+                    <button id="btnOpenMissionOptionsModal" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#missionOptionsModal">Select Mission Options</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="missionOptionsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-light opac-85">
+            <div class="modal-header">
+                <h5 class="modal-title" id="missionOptionsTitle">Choose your mission options.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label asp-for="MissionEnding" class="control-label"></label>
+                        <select asp-for="MissionEnding" asp-items="Html.GetEnumSelectList<MissionEnding>()" class="form-control">
+                            <option selected="selected" value="">Please select Mission Ending</option>
+                        </select>
+                        <span asp-validation-for="MissionEnding" class="text-danger" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label asp-for="ScriptID" class="control-label"></label>
+                        <select asp-for="ScriptID" asp-items="@ViewBag.Scripts" class="form-control">
+                            <option>Please select a Script</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button id="btnSendMissionOptionsSelection" type="button" class="btn btn-primary">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

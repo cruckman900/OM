@@ -1,0 +1,30 @@
+﻿@model List<OMNext.Models.Script>
+@{
+//Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <input type="button" class="btn btn-primary" style="width: 200px" value="Add a new script" onclick="location.href='@Url.Action("AddScript", "Administrators")'" />
+    <table class="table table-striped table-hover auto">
+        <thead>
+            <tr>
+                <th style="width: 140px;"></th>
+                <th style="width: auto;">Title</th>
+                <th style="width: 180px;">Created On Date</th>
+                <th style="width: 180px;">Last Modified</th>
+            </tr>
+        </thead>
+        <tbody class="border">
+            @foreach (var item in Model) {
+            <tr>
+                <td>
+                    <a class="btn btn-secondary btn-sm" asp-action="EditScript" asp-route-id="@item.ScriptID">Edit</a>
+                    <a class="btn btn-secondary btn-sm" asp-action="DeleteScript" asp-route-id="@item.ScriptID">Delete</a>
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                <td>@Html.DisplayFor(modelItem => item.CreatedOnDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.LastModifiedDate)</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

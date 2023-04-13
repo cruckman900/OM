@@ -1,0 +1,6 @@
+<h4><font color="#DB3B21">Post Brief Questions</font></h4>
+<p><b>Communication Team</b></p>
+<ol>
+  <li>What challenges occurred in today's mission?</li>
+  <li>What accomplishments occurred in today's mission?</li>
+</ol>

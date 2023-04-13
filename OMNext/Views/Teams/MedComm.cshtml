@@ -1,0 +1,171 @@
+﻿@model OMNext.Models.DataDrive
+@{
+    ViewData["Title"] = "MedComm";
+    ViewBag.Password = ViewData["Password"];
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+
+    @* Prior to mission start, display a message. Hide after Flight Director pushes data. *@
+    <div id="standingBy" class="bg-danger form-control">
+        <marquee><p style="font-size: 14pt;">Error retrieving satellite data.  Please stand by for instruction from Mission Control.</p></marquee>
+    </div>
+
+    <div id="mainDiv" class="col-md-12 bh-transparent opac-85 py-4 d-none">
+        @* Set up the tabs for the team to view.  TODO: Only display tabs as they become available from FD data push. *@
+        <ul class="nav nav-tabs">
+            <li id="li_map" class="nav-item bg-light"><a data-toggle="tab" href="#map" class="nav-link">Briefing/Water Station Map</a></li>
+            <li id="li_realtime" class="nav-item bg-light"><a data-toggle="tab" role="tab" href="#realtime" class="nav-link">Real-Time Data</a></li>
+            <li id="li_bulletin" class="nav-item bg-light"><a data-toggle="tab" role="tab" href="#bulletin" class="nav-link">Bulletins</a></li>
+            <li id="li_video" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#video" class="nav-link">Volcano Video</a></li>
+            <li id="li_questions" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#questions" class="nav-link">Post-Brief Questions</a></li>
+        </ul>
+
+        <div class="tab-content border">
+            <div id="map" role="tabpanel" class="tab-pane container">
+                <div style="height: 740px">
+                    <div class="row">
+                        <div class="col col-6 opac-85 h-100 w-100">
+                            <div class="img-magnifier-container">
+                                <img id="theMap" src="~/assets/images/WaterStations.png" style="height:740px; background-color: white;" />
+                            </div>
+                        </div>
+                        <div class="col col-6 opac-85 bg-white" style="height: 740px; overflow-y: auto;">
+                            @Html.Raw(ViewBag.Briefing)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="realtime" role="tabpanel" class="tab-pane container">
+                <div style="height: 740px">
+                    <div class="row">
+                        <div class="col col-7 opac-85 h-100 w-100">
+                            @* Get data for the supplied mission and team ID and display it.  TODO: Get the mission and team ID. *@
+                            @await Component.InvokeAsync("FDDataPush", new { MissionID = ViewData["MissionID"], teamid = 4 })
+                        </div>
+                        <div class="h-100 w-100 col col-5 p-0 m-0">
+                            <div id="EvacDataDriveData" class="bg-white opac-85">
+                                @* Get Evacuation data drive data for the given mission.  TODO: Get the mission ID. *@
+                                @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "Evacuation" })
+                            </div>
+                            <div id="MedCommDataDriveData" class="bg-white opac-85 mt-4" style="overflow-y: auto">
+                                @* Get MedComm data drive data for the given mission.  TODO: Get the mission ID. *@
+                                @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "MedComm" })
+                            </div>
+                            <div id="MedComChat" class="h-100 w-100 border bg-white opac-85 p-2 mt-4" style="overflow: hidden;">
+                                @* Get the chat data from the database. *@
+                                @await Component.InvokeAsync("TeamChat", new { MissionID = ViewData["MissionID"] })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bulletin" role="tabpanel" class="tab-pane bg-white opac-85 p-2" style="height: 740px;">
+                @Html.Raw(ViewBag.Bulletin)
+                <button id="btnOpenBulletinModal" class="ml-4">Create Broadcast/Bulletin</button>
+            </div>
+            <div id="video" role="tabpanel" class="tab-pane" style="height: 740px">
+                <video width="1080" height="740" controls>
+                    <source src="~/videos/lavaflow.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="questions" role="tabpanel" class="tab-pane bg-white opac-85 p-2" style="height: 740px;">
+                @Html.Raw(ViewBag.PostBrief)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="medcommModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-light opac-85">
+            <div class="modal-header">
+                <h5 class="modal-title" id="medcommTitle">Create Broadcast/Bulletin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <label for="headline">Headline:</label>
+                        <textarea class="form-control" rows="1" name="headline" id="headline"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="context">Context:</label>
+                        <textarea class="form-control" rows="1" name="context" id="context"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="situation">Situation/Hazard:</label>
+                        <textarea class="form-control" rows="1" name="situation" id="situation"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="remedy">Remedy:</label>
+                        <textarea class="form-control" rows="1" name="remedy" id="remedy"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="knowledge">Knowledge:</label>
+                        <textarea class="form-control" rows="1" name="knowledge" id="knowledge"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="future">Future:</label>
+                        <textarea class="form-control" rows="1" name="future" id="future"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="moreinfo">More Information:</label>
+                        <textarea class="form-control" rows="1" name="moreinfo" id="moreinfo"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="distributiontype">Distribution Type:</label>
+                        <select class="form-control" name="distributiontype" id="distributiontype">
+                            <option></option>
+                            <option>Flyers</option>
+                            <option>Text-Messaging</option>
+                            <option>Radio Broadcast</option>
+                            <option>Online Podcast</option>
+                            <option>Television Broadcast</option>
+                        </select>
+                    </div>
+                </div>
+                <p>
+                    <b>Use the space below to fine tune your bulletin or broadcast script.</b></br />
+                    <em>
+                        Exercise caution editing the text boxes above after editing the text below. Changes here will be overwritten
+                        with the text above if you make changes to the above text boxes.
+                    </em>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <textarea class="form-control" rows="6" name="bulletinbody" id="bulletinbody"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="btnSendMedCommData" type="button" class="btn btn-primary" onclick="">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="_MedCommBulletin" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        InitInterface('@ViewBag.Password');
+    });
+</script>

@@ -1,0 +1,18 @@
+﻿@model OMNext.Models.Administrator
+@{
+    ViewData["Title"] = "Add Administrator";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+
+    <form asp-action="CreateAdmin">
+        <div asp-validation-summary="ModelOnly" class="danger"></div>
+        @{ await Html.RenderPartialAsync("_AdminEditorFormPartial"); }
+    </form>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

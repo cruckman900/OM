@@ -1,0 +1,116 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="container mt-4">
+    <div id="VolcanoData">
+        <div class="card">
+            <div class="card-header bg-danger font-weight-bold py-1 px-2">
+                <span style="color: black;">Volcano Data</span>
+                <span class="float-right ml-4" style="color: black;">
+                    Current GMT <input id="currentGMT" type="text" readonly class="px-2 py-0" style="width: 75px;" />
+                </span>
+                <span class="float-right" style="color: black">
+                    Next Reading in: <input id="volcNextReading" type="text" readonly class="px-2 py-0" style="width: 75px" />
+                </span>
+            </div>
+            <div class="card-body px-2 py-0 m-0" style="height: 60px; overflow-y: scroll; overflow-x: hidden;">
+                <table id="tblVolcData" style="height: 56px;">
+                    <thead>
+                        <tr>
+                            <th>GMT</th>
+                            <th>Hourly VT</th>
+                            <th>Cumul VT</th>
+                            <th>Proj VT</th>
+                            <th>Hourly RF</th>
+                            <th>Cumul RF</th>
+                            <th>Proj RF</th>
+                            <th>T Seismic</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="HurricaneData">
+        <div class="card">
+            <div class="card-header bg-info font-weight-bold py-1 px-2">
+                <span style="color: black;">Hurricane Data</span>
+                <span class="float-right ml-4" style="color: black;">
+                    Current ADV <input id="currentADV" type="text" readonly class="px-2 py-0" style="width: 75px;" />
+                </span>
+                <span class="float-right ml-4" style="color: black">
+                    Next Reading in: <input id="hurcNextReading" type="text" readonly class="px-2 py-0" style="width: 75px" />
+                </span>
+            </div>
+            <div class="card-body px-2 py-0 m-0" style="height: 60px; overflow-y: scroll; overflow-x: hidden;">
+                <table id="tblHurcData" style="height: 56px;">
+                    <thead>
+                        <tr>
+                            <th>ADV</th>
+                            <th>Lat</th>
+                            <th>Lng</th>
+                            <th>Cat</th>
+                            <th>Dst Trav</th>
+                            <th>Speed</th>
+                            <th>Direction</th>
+                            <th>Dist Isl</th>
+                            <th>ETA</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="EvacuationData">
+        <div class="card">
+            <div class="card-header bg-success font-weight-bold py-1 px-2">
+                <span style="color: black;">Evacuation Data</span>
+            </div>
+            <div class="card-body px-2 py-0 m-0" style="height: 60px; overflow-y: scroll; overflow-x: hidden;">
+                <table id="tblEvacData" class="stickyHead" style="height: 56px;">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Population</th>
+                            <th>Transportation</th>
+                            <th>Destination</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    @{ if ((bool)TempData.Peek("HasMedComm"))
+        {
+            <div id="MedComData">
+                <div class="card">
+                    <div class="card-header bg-secondary font-weight-bold py-1 px-2">
+                        <span style="color: black;">MedCom Data</span>
+                        <span class="float-right ml-4" style="color: black;">
+                            Current GMT <input id="currentMCGMT" type="text" readonly class="px-2 py-0" style="width: 75px;" />
+                        </span>
+                        <span class="float-right" style="color: black">
+                            Next Reading in: <input id="medcommNextReading" type="text" readonly class="px-2 py-0" style="width: 75px" />
+                        </span>
+                    </div>
+                    <div class="card-body px-2 py-0 m-0" style="height: 60px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="tblMedCommData" class="stickyHead" style="height: 56px;">
+                            <thead>
+                                <tr>
+                                    <th>Distribution Type</th>
+                                    <th>Bulletin</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

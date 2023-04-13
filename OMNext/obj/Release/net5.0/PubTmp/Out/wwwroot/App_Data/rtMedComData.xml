@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<advisories>
+	<advisory>
+		<gmt>00:00</gmt>
+		<alert>The Soufriere Hills Volcano has been showing periods of higher than normal activity over the last few weeks. Yesterday, activity levels rose once again. Ash clouds have been nearly constant for over 24 hours. Yesterday, the prevailing winds were from the south, carrying the ash over much of the northern part of the island. Ash depth is 1 cm at the St. Johns observation station.</alert>
+		<directives>Make a list of the current and potential medical and safety hazards associated with the volcano and tropical storm. You must understand the potential issues so that you may be prepared to handle any situation that may occur. Develop a list of options. Thinking medically, begin to prepare your first communications broadcast. This will be submitted online for transmission to the island.</directives>
+		<airquality>
+			<south>948</south>
+			<north>254</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>7.0</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>6.9</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>6.9</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>6.1</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>5.9</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>01:30</gmt>
+		<alert>Wind is changing direction. Currently holding steady from the east at 4kph. Tests show that the composition of minerals in the ashfall includes 91% pumiceous glass, 6% cristabolite, and 3% other minerals, including quartz, plagiocase and mafic minerals. Residents are reporting that young children playing outside are suffering from eye and throat irritation. Many children are reported to have hacking dry coughing spells. A few residents have reported to be suffering from hacking cough, sputum, wheezing, and shortness of breath.</alert>
+		<directives>Many small villages do not have access to emergency personnel or doctors. What medical and safety hazard recommendations can you report to the people of Montserrat? Make a list, with options for each. Your team will use this list later. Do you have a report form for Mission Control? What medical or safety hazard recommendations can you report to the people of Montserrat?</directives>
+		<airquality>
+			<south>1101</south>
+			<north>397</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>7.0</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>6.9</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>6.8</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>6.0</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>5.4</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>03:00</gmt>
+		<alert>Sulfur dioxide gas has been detected at observation stations on the southern half of the island. Residents are complaining of foul-tasting water. Wind gusts have been reported. Several trees have fallen across the road in Salem and broken power lines. It has been reported that a man is unconscious and laying in the vicinity of one of the power lines. There is growing concern that more people will be critically injured if they unknowingly walk into active downed lines.</alert>
+		<directives>For each medical or safety hazard you encounter, complete a written recommendation to be given to the Communications Team. Determine how to rescue and treat the critically injured resident from the downed power line. Information on treatment for this injury should be relayed to the public in the event of future accidents. Determine how to warn residents of this dangerous situation. This requires immediate attention.</directives>
+		<airquality>
+			<south>808</south>
+			<north>188</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>6.9</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>6.6</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>5.9</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>04:30</gmt>
+		<alert>A massive ash cloud that has spread rapidly to cover most of the southern part of the island. Projectile tephra are igniting the roofs of houses in the east central part of the island. Wind direction is from the north.</alert>
+		<directives>Sometime between 09:00 and 12:00, Mission Control will ask you for a 3 minute MedComm briefing. Start preparing now. Also, Mission Control needs any water quality recommendations you may have.</directives>
+		<airquality>
+			<south>1604</south>
+			<north>502</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>6.8</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>6.5</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>5.7</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>4.5</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>06:00</gmt>
+		<alert>Bramble Airport Observation Tower is reporting wave heights in excess of 12 feet. Sulfur dioxide levels show an Air Quality Index of 167 in Broderick's Estate, Trials, Gingoes, and St. Patricks. The water treatment facility at Broderick's Estate has shut down due to mechanical failure.</alert>
+		<directives>If you have not submitted your first online emergency bulletin, you need to do so now. Also, Mission Control needs your Air Quality recommendations!</directives>
+		<airquality>
+			<south>6374</south>
+			<north>1912</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>6.3</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>6.3</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>6.0</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>5.2</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>4.1</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>07:30</gmt>
+		<alert>A church has burned down after its roof was ignited by tephra projectiles from the volcano. There are burn victims. Currently there are no doctors in the vicinity. Local residents would like to assist the burn victims. However they are untrained and need information on how to treat these victims. We have no additional information regarding the type of burns we are dealing with, although we believe they range from 1st degree to 3rd degree burns.</alert>
+		<directives>What medical and safety hazard recommendations can you report to the people of Montserrat? Also Mission Control needs your Water Quality recommendations! What are the dangers of high turbidity?</directives>
+		<airquality>
+			<south>7310</south>
+			<north>1999</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>n/a</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>6.3</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>5.9</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>4.6</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>3.8</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>09:00</gmt>
+		<alert>The water treatment facility at Cork Hill has shut down due to mechanical failure. Residents are afraid to drink the water. Some among the elderly and young are suffering the beginning stages of dehydration.</alert>
+		<directives>Be sure to provide any Water Quality recommendations to Mission Control and the Evacuation Team.</directives>
+		<airquality>
+			<south>4811</south>
+			<north>1243</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>6.3</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>6.1</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>4.2</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>3.5</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>10:30</gmt>
+		<alert>Sulfur dioxide levels show an Air Quality Index of 217 in Gages, Weekes, Richmond, and Plymouth. River water across the island shows a dark color and gives a bitter metallic taste.</alert>
+		<directives>Ask your mission facilitator for the "face mask box". Inside are a variety of materials which can be commonly found in households on Montserrat. Your air quality and water quality specialists should develop a plan for creating face masks. You must communicate this plan to mission control in ten minutes.</directives>
+		<airquality>
+			<south>9182</south>
+			<north>No report</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>6.0</ph>
+				<turbidity>Low</turbidity>
+				<contaminates>Al, Fe, Mn</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>5.5</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>5.5</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>3.8</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>3.1</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>12:00</gmt>
+		<alert>It's starting to rain in some locations. Ash depth on rooftops in Plymouth and other southern towns is 7 cm. Molten rocks have begun raining down on homes in Plymouth. There are currently 5 burn victims and more predicted. Most burns are to the head and face. Burns are reported as superficial with swelling, redness, and pain. Blisters have not formed.</alert>
+		<directives>Determine how to treat minor burn victims and submit this information to mission control. There may be many more residents soon reporting similar injuries. Residents must know how to treat injuries and must be given directives to prevent future injuries.</directives>
+		<airquality>
+			<south>No report.</south>
+			<north>3156</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>6.0</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>5.1</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>5.2</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>3.7</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>13:30</gmt>
+		<alert>Small amounts of gaseous hydrogen sulfide and hydrogen flouride have been detected in the southern half of the island. Wind direction is from the north. High tide will occur at 14:00.</alert>
+		<directives>If you have not submitted your second online communications broadcast, you need to do so now. Include steps for creating face masks.</directives>
+		<airquality>
+			<south>11054</south>
+			<north>3476</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>5.1</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>4.8</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>4.8</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>3.5</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>15:00</gmt>
+		<alert>Ash depth in Plymouth has reached 12 cm. Rain has ceased.</alert>
+		<directives>In about 15 minutes, mission control will ask you for a 3 minute endpoint briefing. Start preparing now.</directives>
+		<airquality>
+			<south>11010</south>
+			<north>3003</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>4.9</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>4.6</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>16:30</gmt>
+		<alert>A church roof has collapsed in Plymouth due to a fire which was started by molten rocks. There are several serious injuries reported. One of the injuries is described as a burn across the victims back which shows signs of: redness, swelling, significant amount of pain, white charred peeling skin. The victim is reported as having bluish lips, fingers and nails.</alert>
+		<directives>Residents assisting the burn victim must be given instructions on how to treat the patient. They do not know how to assist the victim. Other local residents must be educated in how to treat this type of burn as there is increased risk that this could occur within the near future.</directives>
+		<airquality>
+			<south>12543</south>
+			<north>3888</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>4.7</ph>
+				<turbidity>Medium</turbidity>
+				<contaminates>Al, Fe, Mn, F</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>4.2</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>3.9</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>18:00</gmt>
+		<alert>A farmer near Caines River has reported that he had a contained area where he was keeping fertilizer to use on his fields. The shed that was housing this chemical blew apart in the storm and the fertilizer is now being washed into his creek. Residents and livestock use water from this creek. There have been reports that a lahar has buried an electrical power station in the town of Gages.</alert>
+		<directives>Determine if there are dangerous levels of contamination. If so, who is effected? Residents will need notification and procedures for handling water contamination if contamination is a concern. What medical and safety hazard recommendations can you report to the people of Montserrat?</directives>
+		<airquality>
+			<south>No report.</south>
+			<north>No report.</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>4.4</ph>
+				<turbidity>High</turbidity>
+				<contaminates></contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>4.1</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>19:30</gmt>
+		<alert>Communications from the island have ceased. No report.</alert>
+		<directives>Communications from the island have ceased. No report.</directives>
+		<airquality>
+			<south>10890</south>
+			<north>No report.</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>4.4</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>3.9</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>3.4</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>2.4</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+	<advisory>
+		<gmt>21:00</gmt>
+		<alert>Communications from the island have ceased. No report.</alert>
+		<directives>Communications from the island have ceased. No report.</directives>
+		<airquality>
+			<south>4509</south>
+			<north>1354</north>
+		</airquality>
+		<waterquality>
+			<loc1>
+				<location>Station 1</location>
+				<ph>4.4</ph>
+				<turbidity>High</turbidity>
+				<contaminates></contaminates>
+			</loc1>
+			<loc2>
+				<location>Station 2</location>
+				<ph>3.7</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc2>
+			<loc3>
+				<location>Station 3</location>
+				<ph>3.1</ph>
+				<turbidity>High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc3>
+			<loc4>
+				<location>Station 4</location>
+				<ph>No report.</ph>
+				<turbidity>No report.</turbidity>
+				<contaminates>No report.</contaminates>
+			</loc4>
+			<loc5>
+				<location>Station 5</location>
+				<ph>2.4</ph>
+				<turbidity>Very High</turbidity>
+				<contaminates>Al, Fe, Mn, F, Cl, Na, Ca, Mg</contaminates>
+			</loc5>
+		</waterquality>
+	</advisory>
+</advisories>

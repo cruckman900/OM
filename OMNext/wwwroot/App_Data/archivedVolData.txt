@@ -1,0 +1,82 @@
+<h4><font color="#DB3B21">Archived Volcano Data</font></h4>
+<table>
+  <tr class="tRow"> 
+    <th width="60">GMT</th>
+    <th width="110">Hourly VT&nbsp;Events</th>
+    <th width="110">Cumulative VT&nbsp;Events</th>
+    <th width="90">Multiply By</th>
+    <th width="100">Projected VT&nbsp;Events Total</th>
+    <th width="110"></th>
+  </tr>
+  <tr> 
+    <td width="65">21:00</td>
+    <td width="110">No data available</td>
+    <td width="110">340</td>
+    <td width="90">1.09</td>
+    <td width="100"></td>
+    <td width="110"></td>
+  </tr>
+  <tr> 
+    <td width="65">22:00</td>
+    <td width="110">21</td>
+    <td width="110">361</td>
+    <td width="90">1.04</td>
+    <td width="100"></td>
+    <td width="110"></td>
+  </tr>
+  <tr> 
+    <td width="65">23:00</td>
+    <td width="110">29</td>
+    <td width="110">390</td>
+    <td width="90">1</td>
+    <td width="100"></td>
+    <td width="110"></td>
+  </tr>
+  <tr>
+  	<td></td>
+  	<td></td>
+  	<td></td>
+  	<td></td>
+  	<td></td>
+  	<td></td>
+  </tr>
+  <tr> 
+    <th width="65">GMT</th>
+    <th width="110">Hourly RF&nbsp;Events</th>
+    <th width="110">Cumulative RF&nbsp;Events</th>
+    <th width="90">Multiply By</th>
+    <th width="100">Projected RF&nbsp;Events Total</th>
+    <th width="110">Projected Total Seismic Activity &#13;(RF + VT)</th>
+  </tr>
+  <tr> 
+    <td width="65">21:00</td>
+    <td width="110">No data available</td>
+    <td width="110">184</td>
+    <td width="90">1.09</td>
+    <td width="100"></td>
+    <td width="110"></td>
+  </tr>
+  <tr> 
+    <td width="65">22:00</td>
+    <td width="110">17</td>
+    <td width="110">201</td>
+    <td width="90">1.04</td>
+    <td width="100"></td>
+    <td width="110"></td>
+  </tr>
+  <tr> 
+    <td width="65">23:00</td>
+    <td width="110">19</td>
+    <td width="110">220</td>
+    <td width="90">1</td>
+    <td width="100"></td>
+    <td width="110"></td>
+  </tr>
+</table>
+<h4><font color="#DB3B21">Observations Sept 3rd</font></h4>
+
+<p>Strong winds and heavy rain from Sept 2nd caused flash floods and made visual observation of the dome difficult.</p>
+<p>Almost all of the activity on the dome has been on the eastern side, although steaming has been occurring consistently from many areas on the dome. The Western side shows signs of being unstable and likely to generate pyroclastic flows of an unknown size.</p>
+<p>This day has seen two or more hours of increasing rockfall activity and generation of small pyroclastic flows. The number of flows is smaller than expected, given the amount of seismic activity. If we do not see many more flows in the next few days, the pressure in the volcanic vents could grow enormously.</p>
+<p>Moderate ash clouds of 3 km or less were distributed north- westwards, with 1 to 2 cm of ash deposited in the Cork Hill area. The few pyroclastic flows today produced ash clouds that rose 6 km, but there was no evidence of vertical columns from the summit of the dome. These events caused ash to fall on nearly every part of the island from St. Patrick's in the SW, to St. John's in the N, and from Plymouth in the W to Long Ground in the NE, including Bramble Airport.</p>
+<p>Volcanic tremors during this period continued to occur in short swarms, the frequency of which has increased over the past three days. The tremors were similar to those seen over the previous several weeks and were located at depths of less than 2 km (below sea level) beneath the crater. They are generally too small to be felt in occupied areas.</p>

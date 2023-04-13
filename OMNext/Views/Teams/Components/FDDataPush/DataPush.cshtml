@@ -1,0 +1,156 @@
+﻿@model IEnumerable<OMNext.Models.DataDrive>
+@{
+    if (ViewData["Team"].ToString() == "Volcano")
+    {
+        <div id="VolcDataDrive">
+            <div class="card" style="height: 740px;">
+                <div class="card-header bg-danger font-weight-bold py-1 px-2">
+                    <span style="color: black;">Volcano Data</span>
+                </div>
+                <div class="card-body px-0 py-0 my-0 h-100 table-area" style="overflow-y: scroll;">
+                    <table id="tblVolcDataDrive" class="responsive-table table table-striped table-hover auto border py-2">
+                        <tr>
+                            <th class="width80">GMT</th>
+                            <th class="width80">VT</th>
+                            <th class="width80">RF</th>
+                            <th>Observations</th>
+                        </tr>
+                        @* Fetch and display the data. TODO: Get the upper bound for the for loop from session. *@
+                        @for (int i = ViewBag.VolcData.Count - 1; i >= 0; i--)
+                        {
+                            <tr class="d-none">
+                                <td>@ViewBag.VolcData[i].gmt</td>
+                                <td>@ViewBag.VolcData[i].vt</td>
+                                <td>@ViewBag.VolcData[i].rf</td>
+                                <td>@ViewBag.VolcData[i].obs</td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else if (ViewData["Team"].ToString() == "Hurricane")
+    {
+        <div id="HurcDataDrive">
+            <div class="card" style="height: 740px;">
+                <div class="card-header bg-info font-weight-bold py-1 px-2">
+                    <span style="color: black;">Hurricane Data</span>
+                </div>
+                <div class="card-body px-0 py-0 my-0 h-100" style="overflow-y: scroll">
+                    <table id="tblHurcDataDrive" class="responsive-table table table-striped table-hover auto border py-2">
+                        <tr>
+                            <th class="width80">ADV</th>
+                            <th class="width80">LAT</th>
+                            <th class="width80">LON</th>
+                            <th class="width80">GMT</th>
+                            <th class="width80">WIND</th>
+                            <th class="width80">PRES</th>
+                            <th>SAT</th>
+                        </tr>
+                        @* Fetch and display the data. TODO: Get the upper bound for the for loop from session. *@
+                        @for (int i = ViewBag.HurcData.Count - 1; i >= 0; i--)
+                        {
+                            <tr class="d-none">
+                                <td>@ViewBag.HurcData[i].adv</td>
+                                <td>@ViewBag.HurcData[i].lat</td>
+                                <td>@ViewBag.HurcData[i].lon</td>
+                                <td>@ViewBag.HurcData[i].gmt</td>
+                                <td>@ViewBag.HurcData[i].wind</td>
+                                <td>@ViewBag.HurcData[i].pres</td>
+                                <td>
+                                    @{if (ViewBag.HurcData[i].sat.ToString().Length > 0)
+                                        {
+                                            <div><img src="~/@ViewBag.HurcData[i].sat" style="width: 175px;" /></div>
+                                            <div><img src="~/@ViewBag.HurcData[i].leg" style="width: 175px;" /></div>
+                                            <div>
+                                                <span style="float: left">@ViewBag.HurcData[i].lbl1</span>
+                                                <span style="float: right">@ViewBag.HurcData[i].lbl2</span>
+                                            </div>
+                                        }
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else if (ViewData["Team"].ToString() == "MedComm")
+    {
+        <div id="MedComDataDrive">
+            <div class="card" style="height: 740px;">
+                <div class="card-header bg-secondary font-weight-bold py-1 px-2">
+                    <span style="color: black;">MedComm Data</span>
+                </div>
+                <div class="card-body px-0 py-0 my-0 h-100" style="overflow-y: scroll">
+                    <table id="tblMedComDataDrive" class="responsive-table table table-striped table-hover auto border py-2">
+                        @* Fetch amd display the data. *@
+                        @for (int i = ViewBag.MedComData.Count - 1; i >= 0; i--)
+                        {
+                            <tr class="d-none">
+                                <td>
+                                    <div><h4><b>GMT: </b>@ViewBag.MedComData[i].gmt</h4></div>
+                                    <div class="my-1"><b>Alert: </b>@ViewBag.MedComData[i].alert</div>
+                                    <div class="my-1"><b>Directives: </b>@ViewBag.MedComData[i].directives</div>
+                                    <div class="my-1"><b>Air Quality: (Total Suspended Partials)</b></div>
+                                    <div>
+                                        <table class="responsive-table table table-striped">
+                                            <tr>
+                                                <td style="width: 150px;"><b>South: </b>@ViewBag.MedComData[i].airquality.south</td>
+                                                <td style="width: 150px;"><b>North: </b>@ViewBag.MedComData[i].airquality.north</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="my-1"><b>Water Quality:</b></div>
+                                    <div>
+                                        <table class="responsive-table table table-striped table-borderless">
+                                            <tr>
+                                                <th>Location</th>
+                                                <th>pH</th>
+                                                <th>Turbidity</th>
+                                                <th>Contaminates</th>
+                                            </tr>
+                                            <tr>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc1.location</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc1.ph</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc1.turbidity</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc1.contaminates</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc2.location</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc2.ph</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc2.turbidity</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc2.contaminates</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc3.location</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc3.ph</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc3.turbidity</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc3.contaminates</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc4.location</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc4.ph</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc4.turbidity</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc4.contaminates</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc5.location</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc5.ph</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc5.turbidity</td>
+                                                <td>@ViewBag.MedComData[i].waterquality.loc5.contaminates</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+}

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<OMNext.Models.RunningMission>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="container" style="height: 740px; overflow-y: auto;">
+    <h2 class="light-text">Usage By CLC Center Between @ViewBag.StartDate and @ViewBag.EndDate</h2>
+    <div class="row">
+        <div class="col-md-5 pt-2 bg-light opac-85">
+            <h4>Usage by Date</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="pl-2 pr-2">Abbreviation</th>
+                        <th class="pl-2 pr-2">Flight Director</th>
+                        <th class="pl-2 pr-2">Mission Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.CLCCenter.Abbreviation)</td>
+                            <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.FlightDirector)</td>
+                            <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.MissionDate)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-7 bg-light opac-85">
+            @await Component.InvokeAsync("DisplayCLCCentersList")
+        </div>
+    </div>
+</div>
+<div class="row" style="height: 300px; overflow-y: auto;">
+    <div class="col pt-2 bg-light opac-85">
+        <h4>Mission Count per CLC Center</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th class="pl-2 pr-2">CLC Center</th>
+                    <th class="pl-2 pr-2">Mission Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    Dictionary<string, int> MissionCount = new Dictionary<string, int>();
+                    foreach (var item in Model)
+                    {
+                        if (!MissionCount.ContainsKey(item.CLCCenter.CenterName))
+                        {
+                            MissionCount.Add(item.CLCCenter.CenterName, Model.Where(x => x.CLCCenterID == item.CLCCenterID).Count());
+                        }
+                    }
+                }
+                @foreach (var item in MissionCount)
+                {
+                    <tr>
+                        <td class="pl-2 pr-2">@item.Key</td>
+                        <td class="pl-2 pr-2">@item.Value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row form-group bg-light opac-85">
+    <input type="button" class="btn btn-default" value="Go Back" onclick="location.href='@Url.Action("Index", "Administrators")'" />
+</div>

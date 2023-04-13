@@ -1,0 +1,27 @@
+﻿@model IEnumerable<OMNext.Models.RunningMission>
+@{
+    ViewData["Title"] = "Flight Director Interface";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+</div>
+<div class="container" style="overflow-y: hidden;">
+    <div class="row h-100">
+        <div class="col col-7 mx-0">
+            <div id="FDDataPush" class="opac-85">@await Component.InvokeAsync("FDDataPush", new { MissionID = ViewData["MissionID"], TeamID = 5 } )</div>
+            <div id="TeamDataDriveData" class="opac-85">@await Component.InvokeAsync("TeamDataDriveData")</div>
+            <div id="FDChat" class="h-100 w-100 border mt-4 bg-white opac-85 p-2">@await Component.InvokeAsync("FDChat", new { MissionID = ViewData["MissionID"] })</div>
+        </div>
+        <div class="col col-5 p-0 mx-0">
+            <span class="bg-white opac-85 mr-2 p-2">
+                <input type="button" id="btnIncreaseFont" class="btn btn-sm btn-secondary" style="font-size: 10pt; font-weight: bold;" onclick="resizeText('increase')" value="Increase Font" />
+                <input type="button" id="btnDecreaseFont" class="btn btn-sm btn-secondary" style="font-size: 10pt; font-weight: bold;" onclick="resizeText('decrease')" value="Decrease Font" />
+            </span>
+            <div id="FDScript" class="p-2 mx-0 border bg-white text-dark opac-85" style="height: 768px; overflow-y: scroll; overflow-x: hidden;">
+                @Html.Raw(ViewData["Script"])
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="_MedCommBulletin" />

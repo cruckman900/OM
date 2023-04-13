@@ -1,0 +1,85 @@
+﻿@model List<OMNext.Models.Chat>
+@using Microsoft.AspNetCore.Http;
+@using OMNext.Helpers;
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h4>Type your message</h4>
+<div class="row">
+    <div class="col col-sm-12">
+        <textarea id="messageInput" class="h-100 w-100 border-0 bg-light"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group btn-group-toggle" id="filterTeam" data-toggle="buttons" role="toolbar">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="teamSelect" id="all" value="All" autocomplete="off" checked />
+                    <span>All Teams</span>
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="teamSelect" id="comm" value="Communications" autocomplete="off" />
+                    <span>Comm</span>Data
+                    <span id="badgeComm" class="badge badge-danger rounded-circle" style="height: 10px;">&nbsp;</span>
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="teamSelect" id="volc" value="Volcano" autocomplete="off" />
+                    <span>Volcano</span>
+                    <span id="badgeVolc" class="badge badge-danger rounded-circle" style="height: 10px;">&nbsp;</span>
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="teamSelect" id="hurc" value="Hurricane" autocomplete="off" />
+                    <span>Hurricane</span>
+                    <span id="badgeHurc" class="badge badge-danger rounded-circle" style="height: 10px;">&nbsp;</span>
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="teamSelect" id="evac" value="Evacuation" autocomplete="off" />
+                    <span>Evacuation</span>
+                    <span id="badgeEvac" class="badge badge-danger rounded-circle" style="height: 10px;">&nbsp;</span>
+                </label>
+                @{ if ((bool)TempData.Peek("HasMedComm"))
+                    {
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="teamSelect" id="medcomm" value="MedComm" autocomplete="off" />
+                            <span>MedComm</span>
+                            <span id="badgeMedComm" class="badge badge-danger rounded-circle" style="height: 10px;">&nbsp;</span>
+                        </label>
+                    }
+                }
+            </div>
+            <input type="hidden" id="missionID" />
+            <input type="hidden" id="userInput" value="FD" />
+            <input type="hidden" id="sendFromInput" value="FD" />
+            <input type="hidden" id="sendToInput" />
+            <div class="btn-group float-right" role="group">
+                <button id="sendButton" class="btn-warning" onmousedown="getSendToVal();">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getSendToVal() {
+        $("#sendToInput").val($('#filterTeam input:radio:checked').val());
+    }
+</script>
+<h4>Messages</h4>
+<div class="row">
+    <div class="col">
+        <div class="text-light p-2" style="background-color: #000000; height: 100px; line-height: normal; overflow-y: scroll;">
+            <ul id="messagesList" class="list-group">
+                @for (int i = Model.Count - 1; i >= 0; i--)
+                {
+                    <li><b>@Model[i].SentDateTime.ToShortTimeString() - From @Model[i].From  To @Model[i].To: </b> @Model[i].Message</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<script>
+    var missionID = @HttpContextAccessor.HttpContext.Session.GetString("MissionID");
+    initGroup(missionID);
+    initTeam("");
+    document.getElementById("missionID").value = missionID;
+</script>

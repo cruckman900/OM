@@ -1,0 +1,40 @@
+﻿@model OMNext.Models.RunningMission
+@{ 
+    ViewData["Title"] = "Flight Director ReLog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Title"]</h2>
+    <div class="col-md-12 pt-2 pb-2 bg-light opac-85">
+        <h3>@ViewData["Message"]</h3>
+
+        <form asp-action="FDRelog">
+
+            <div asp-validation-summary="ModelOnly" class="danger"></div>
+            <div class="row">
+                <div class="form-group col col-mid-12">
+                    <label asp-for="MissionID" class="control-label"></label>
+                    <select asp-for="MissionID" asp-items="@ViewBag.RunningMissions" class="form-control">
+                        <option>Please select a Mission</option>
+                    </select>
+                    <span asp-validation-for="MissionID" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col col-md-12">
+                    <label asp-for="Booth" class="control-label"></label>
+                    <input asp-for="Booth" class="form-control" />
+                    <span asp-validation-for="Booth" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

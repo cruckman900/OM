@@ -1,0 +1,10 @@
+<h4><font color="#DB3B21">Post Brief Questions</font></h4>
+<p><b>Hurricane Team</b></p>
+<ol>
+  <li>What was the course of the hurricane during the mission?</li>
+  <li>In what way did the hurricane impact the human, animal, and marine life? Also discuss the vegetation on the island.</li>
+  <li>How was the island's infrastructure (building, roads, bridges, airport, etc) affected?</li>
+  <li>What is the current condition of water quality?</li>
+  <li>What challenges occurred in today's mission?</li>
+  <li>What accomplishments occurred in today's mission?</li>
+</ol>

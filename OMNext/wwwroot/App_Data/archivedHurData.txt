@@ -1,0 +1,60 @@
+<h4><font color="#DB3B21">Archived Hurricane Data</font></h4>
+<p>Archived satellite image of Hurricane Bob transmitted shortly after communications with the satellite and Montserrat were restored</p>
+<p>The following information on Hurricane Bob was sent from the National Hurricane Center.</p>
+<table>
+  <tr> 
+    <th width="55">ADV</th>
+    <th width="60">LAT</th>
+    <th width="60">LON</th>
+    <th width="100">Time</th>
+    <th width="100">Wind<br>kph&nbsp;(mph)</th>
+    <th width="125">Pressure<br>(millibars)</th>
+  </tr>
+  <tr> 
+    <td width="55">21</td>
+    <td width="60">16.50</td>
+    <td width="60"><i>54.80</i></td>
+    <td width="100">09/3 : 2100</td>
+    <td width="100">124 (77)</td>
+    <td width="125">996</td>
+  </tr>
+  <tr> 
+    <td width="55">22</td>
+    <td width="60">16.50</td>
+    <td width="60"><i>54.90</i></td>
+    <td width="100">09/3 : 2230</td>
+    <td width="100">161 (100)</td>
+    <td width="125">978</td>
+  </tr>
+</table>
+<p>*Radius of the storm is 225 kilometers (140 miles)</p>
+<p><b>Key</b></p>
+<table>
+  <tr> 
+    <td width="75"><b>ADV</b></td>
+    <td width="25">=</td>
+    <td>Advisory</td>
+  </tr>
+  <tr> 
+    <td width="75"><b>LAT</b></td>
+    <td width="25">=</td>
+    <td>Latitude [16.90 = 16° 54 minutes]</td>
+  </tr>
+  <tr> 
+    <td width="75"><b>LON</b></td>
+    <td width="25">=</td>
+    <td>Longitude [53.60 = 53° 42 minutes]</td>
+  </tr>
+  <tr> 
+    <td width="75"><b>WIND</b></td>
+    <td width="25">=</td>
+    <td>Wind speed measured in kilometers per hour (kph)<br> and miles per hour (mph)</td>
+  </tr>
+  <tr> 
+    <td width="75"><b>PR</b></td>
+    <td width="25">=</td>
+    <td>Air Pressure measured in inches on the barometric scale</td>
+  </tr>
+</table>
+<p>It appears that Bob has been stalled near latitude 16.5 north...longitude 54.9 west, or about 755 km east of Montserrat, and is moving very slowly westward with hurricane force winds extending 225 kilometers from its center. The estimated minimum central air pressure is 978 mbar. Bob is now a category two hurricane with sustained winds in excess of 161 kph.</p>
+<p>Real-time data will be sent at five-minute intervals during the mission. Remember that five minutes of e-Mission time is equal to 1.5 hours of Montserrat time.</p>

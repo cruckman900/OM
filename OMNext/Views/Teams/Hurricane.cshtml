@@ -1,0 +1,74 @@
+﻿@model OMNext.Models.DataDrive
+@{
+    ViewData["Title"] = "Hurricane";
+    ViewBag.Password = ViewData["Password"];
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+
+    @* Prior to mission start, display a message. Hide after Flight Director pushes data. *@
+    <div id="standingBy" class="bg-danger form-control">
+        <marquee><p style="font-size: 14pt;">Error retrieving satellite data.  Please stand by for instruction from Mission Control.</p></marquee>
+    </div>
+
+    <div id="mainDiv" class="col-md-12 bg-transparent opac-85 py-4 d-none">
+        @* Set up the tabs for the team to view. TODO: Only display tabs as they become available from FD data push. *@
+        <ul class="nav nav-tabs">
+            <li id="li_archive" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#archive" class="nav-link">Archived Data</a></li>
+            <li id="li_realtime" class="nav-item bg-light"><a data-toggle="tab" role="tab" href="#realtime" class="nav-link">Real-Time Data</a></li>
+            <li id="li_video" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#video" class="nav-link">Volcano Video</a></li>
+            <li id="li_questions" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#questions" class="nav-link">Post-Brief Questions</a></li>
+        </ul>
+
+        <div class="tab-content border">
+            <div id="archive" role="tabpanel" class="tab-pane bg-white opac-85 p-2" style="height: 740px">
+                @* Display the data from the HTML file. *@
+                @Html.Raw(ViewBag.ArchivedHurData)
+            </div>
+            <div id="realtime" role="tabpanel" class="tab-pane container">
+                <div style="height: 740px">
+                    <div class="row">
+                        <div class="col col-7 opac-85 h-100 w-100">
+                            @* Get data for the supplied mission and team ID and display it.  TODO: Get the mission and team ID. *@
+                            @await Component.InvokeAsync("FDDataPush", new { MissionID = ViewData["MissionID"], teamid = 1 })
+                        </div>
+                        <div class="h-100 w-100 col col-5 p-0 m-0">
+                            <div id="EvacDataDriveData" class="bg-white opac-85">
+                                @* Get Evacuation data drive data for the given mission.  TODO: Get the mission ID. *@
+                                @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "Evacuation" })
+                            </div>
+                            @{ if ((bool)TempData.Peek("HasMedComm"))
+                                {
+                                    <div id="MedCommDataDriveData" class="bg-white opac-85 mt-4" style="overflow-y: auto">
+                                        @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "MedComm" })
+                                    </div>
+                                }
+                            }
+                            <div id="HurcChat" class="h-100 w-100 border bg-white opac-85 p-2 mt-4" style="overflow: hidden;">
+                                @* Get the chat data from database. *@
+                                @await Component.InvokeAsync("TeamChat", new { MissionID = ViewData["MissionID"] })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="video" role="tabpanel" class="tab-pane" style="height: 740px">
+                <video width="1080" height="740" controls>
+                    <source src="~/videos/lavaflow.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="questions" role="tabpanel" class="tab-pane bg-white opac-85 p-2" style="height: 740px">
+                @Html.Raw(ViewBag.PostBrief)
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="_MedCommBulletin" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        InitInterface('@ViewBag.Password');
+    });
+</script>

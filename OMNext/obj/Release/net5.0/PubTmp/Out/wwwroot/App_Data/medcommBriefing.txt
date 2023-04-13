@@ -1,0 +1,81 @@
+﻿<h4><font color="#DB3B21">Mission Directives</font></h4>
+<h5>Your Task</h5>
+<p>Before the mission begins, practice analyzing emergency medical response data. You should be able to:</p>
+<ul>
+	<li>Examine information related to medical emergencies and respond with recommendations</li>
+	<li>Prepare a report form to be read to Mission Control by the Communicator</li>
+	<li>Prepare emergency broadcasts and bulletins</li>
+	<li>Receive Water Quality (WQ) and Air Quality (AQ) data and determine the health hazards to island residents</li>
+</ul>
+<h5>Team Tasks</h5>
+<p>These tasks are listed in priority order. Assign team members to each task. Depending on the size of your team,
+you may need to assign two tasks to one person. More details about each job are given further below.</p>
+<p style="padding-left: 15pt;"><b>Medical Response/Team Leader(s)</b> <em>(1 or 2 people)</em>. Fill out a Report From as needed. Write down all questions from Mission Control and respond back with written notes to be given to the Comm Data Officer.
+<p style="padding-left: 15pt;"><b>Public Communications</b> <em>(3 people)</em>. Work with the entire emergency response center to understand health concerns and to develop a public communications response. Two people will gather the information, decide on a communications method and write an outline for the third person to use to give reports. The third person is the Reporter. This person will write scripts or other messages and record broadcasts.</p>
+<p style="padding-left: 15pt;"><b>Air Quality Analysis</b> <em>(1 or 2 people)</em>. Using real-time data about air quality, determine any health hazards.</p>
+<p style="padding-left: 15pt;"><b>Water Quality Analysis</b> <em>(1 or 2 people)</em>. Using real-time data about water quality, determine any health hazards.</p>
+<div style="font-weight: bold; padding-bottom: 6px;">Very Important! Your team has inputs and outputs. The inputs are real-time data and information gathered from other teams. The outputs are (1) report forms to Mission Control, (2) emergency bulletins submitted online, and (3) emergency medical broadcasts. <u>All team members should be aware of all outputs before they go out!</u></div>
+<p><img src="../images/MedCommBriefingDiagram.png" style="height: 275px" />
+<p><b>Detailed Instructions: Medical Response Specialists</b></p>
+<p>Think medically. Your job is to critically analyze how to minimize health emergencies or hazards. To do so, you will be coordinating information from a variety of sources and making recommendations:</p>
+<ul>
+	<li>Gather information about every ten minutes from the Hurricane, Volcano, and Evacuation Teams. You are asking them what dangers there are to humans. Then you will need to take this information back to your team and determine what safety precautions or first aid measures need to be taken.</li>
+	<li>Use the information from above and the information on Water Quality and Air Quality to develop written recommendations to be given to the Communications Data Officer at the front of the room.</li>
+	<li>You and your partner (if you have one) are the team leaders. Coordinate the efforts of your team. At times, you will need to prioritize what to work on. Remember that the entire island is counting on your team to guarantee their safety. If you work inefficiently, you may be jeopardizing lives.</li>
+</ul>
+<p><b>Detailed Instructions: Public Communications Specialists & Reporter</b></p>
+<p>Your job is to develop medical alert bulletins and broadcasts. You are concerned with providing updates that will help guarantee the health and safety of the people.</p>
+<ul>
+	<li>Gather information about the status of any dangers or emergencies. You may get some of this information from the Medical Response Specialists on your team. You may have to go to other teams at times to get the information you need. Your information should be up-to-date, so expect to get new information at least every fifteen minutes.</li>
+	<li>
+		Create emergency broadcasts and bulletins using an online form. These will be broadcast to the residents of the island. You should do this as often as necessary. Choose which communications method or combination of methods you will use:
+		<ul>
+			<li>Flyers (Distributed slowly using runners across the island. Will reach the most people)</li>
+			<li>Text-messaging (Distributed quickly. Allows for real-time updates. Limited to those who have cell phones and cell phone reception in the mountains)</li>
+			<li>Radio broadcast (Distributed quickly. Allows for real-time updates. Limited to those who have radios with batteries</li>
+			<li>Online podcast (Distributed quickly to computers and cell phones. Allows for frequent updates. Limited to those who have computers and electricity for downloads or those who have cell phones and cell phone reception in the mountains</li>
+			<li>Television broadcast (Distributed quickly. Allows for real-time updates. Limited to those who have electricity, televisions and can get TV signal reception</li>
+		</ul>
+	</li>
+	<li>Take the information you have and develop recommendations <u>with your team</u>. Write down the recommendations and give this to your team Medical Response Specialists to give to Mission Control.</li>
+	<li>Write down an outline of what needs to be communicated to the island residents. Give this outline to the team <u>Reporter</u>.</li>
+	<li><u>Reporter</u>: You have to create all the written materials for flyers or text messages, and the scripts for broadcasts. At the <u>midpoint of the mission</u>, you will give a 3-minute news briefing to all teams and Mission Control. This brief acts as an update which allows all teams to understand the events that are taking place on each team. During this briefing, you may bring other team members with you and interview them as you would do in an actual news cast. For instance, you may want to ask, "It appears that the emergency response team is under a great deal of stress. Can you explain to us what is occurring?" At the <u>end of the mission</u>, you will summarize the final developments. Be certain to take good notes and stay on top of the latest changes and developments. Good luck!</li>
+</ul>
+<p><b>Detailed Instructions: Air Quality and Water Quality Analysis</b></p>
+<p>Your job is to examine the real-time data about air and water quality and determine any safety or health hazards. Once you determine if there is a possible hazard, develop a written recommendation and give this immediately to the Medical Response Specialists on your team.</p>
+<p>You should read the air and water quality reference guides, and be sure you understand these concepts:</p>
+<ul>
+	<li>TSP (Total Suspended Particles), Respirable particles</li>
+	<li>Air Quality Index for particle pollution</li>
+	<li>Water contamination: pH, turbidity, and concentration of contaminants such as fluoride</li>
+</ul>
+<p>If you have read and understand the reference guide, test yourself. For instance, you should know what to do if:</p>
+<ul>
+	<li>the TSP is over 6,000 (4% respirable)</li>
+	<li>the AQI is 247</li>
+	<li>the pH of the water supply is 3.5</li>
+	<li>the turbidity of the water supply is high</li>
+	<li>there are elevated levels of fluoride in the water</li>
+</ul>
+<p style="padding-left: 15pt;">
+	<b>The most important part of the Air Quality Reference Guide is this information:</b>
+	<p style="padding-left: 15pt;">
+		To determine the potential hazard, you must do three things:
+		<ol style="padding-left: 45pt;">
+			<li>Determine if the ash contains cristobalite or other crystalline silica. If so, the danger is increased.</li>
+			<li>Determine the Air Quality Index. To do so, <b>take the TSP and multiply it by .04.</b> (Scientific studies have determined that on Montserrat, the respirable particles comprise about 4% of the TSP)</li>
+			<li>Use the Air Quality Index table to determine what hazards exist.</li>
+		</ol>
+	</p>
+</p>
+<p style="padding-left: 15pt;">
+	<b>The most important part of the Water Quality Reference Guide is this information:</b>
+	<p style="padding-left: 15pt;">
+		Volcanic eruptions may have the following effects upon the quality of the water:
+		<ul style="padding-left: 45pt;">
+			<li><u>Acidity (pH)</u>: Ash may affect the acidity (lowers pH) or toxicity level of streams, lakes and ponds to such an extent that the growth of beneficial algae and bacteria may be damaged or lost.</li>
+			<li><u>Turbidity</u>: Increased presence of fine particles in the water (turbidity) inhibits disinfection, and stimulates unhealthy bacterial growth which could lead to outbreaks of infectious disease. Of particular concern is an outbreak of <u>giardiasis</u> which has been associated with prior volcanic eruptions. See below for more details.</li>
+			<li><u>Contaminants</u>: Elevated fluoride concentrations, among other elements such as aluminum, iron, and manganese.</li>
+		</ul>
+	</p>
+</p>

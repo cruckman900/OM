@@ -1,0 +1,154 @@
+﻿@model OMNext.Models.DataDrive
+@{
+    ViewData["Title"] = "Evacuation";
+    ViewBag.Password = ViewData["Password"];
+}
+
+<div class="container">
+    <h2 class="light-text">@ViewData["Message"]</h2>
+
+    @* Prior to mission start, display a message. Hide after Flight Director pushes data. *@
+    @*<div id="standingBy" class="bg-danger form-control">
+            <marquee><p style="font-size: 14pt;">Error retrieving satellite data.  Please stand by for instruction from Mission Control.</p></marquee>
+        </div>*@
+
+    <div id="mainDiv" class="col-md-12 bg-transparent opac-85 py-4">
+        @* Set up the tabs for the team to view. TODO: Only display tabs as they become available from FD data push. *@
+        <ul class="nav nav-tabs">
+            <li class="nav-item bg-light"><a data-toggle="tab" role="tab" href="#shelters" class="nav-link">Shelters</a></li>
+            <li class="nav-item bg-light"><a data-toggle="tab" role="tab" href="#map" class="nav-link">Evacuation Map</a></li>
+            <li id="li_video" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#video" class="nav-link">Volcano Video</a></li>
+            <li id="li_questions" class="nav-item bg-light d-none"><a data-toggle="tab" role="tab" href="#questions" class="nav-link">Post-Brief Questions</a></li>
+        </ul>
+
+        <div class="tab-content border">
+            <div id="shelters" role="tabpanel" class="tab-pane bg-white opac-85 p-2" style="height: 740px">
+                @* Display the data from the HTML file. *@
+                @Html.Raw(ViewBag.EvacShelters)
+            </div>
+            <div id="map" role="tabpanel" class="tab-pane container">
+                <div style="height: 740px">
+                    <div class="row">
+                        <div class="col col-7 opac-85 h-100 w-100">
+                            <div class="btn-group-toggle h-100 align-top" data-toggle="buttons">
+                                <label id="btnTopo" class="btn btn-success btn-sm" onmouseup="changeMap('btnTopo')">
+                                    <input type="checkbox" checked autocomplete="off" />Topographic Map
+                                </label>
+                                <label id="btnPop" class="btn btn-success btn-sm" onmouseup="changeMap('btnPop')">
+                                    <input type="checkbox" checked autocomplete="off" />Population Density
+                                </label>
+                                <label id="btnRoad" class="btn btn-success btn-sm" onmouseup="changeMap('btnRoad')">
+                                    <input type="checkbox" checked autocomplete="off" />Roadways
+                                </label>
+                            </div>
+                            <div class="img-magnifier-container">
+                                <img id="theMap" src="" style="height: 710px; background-color: white;" />
+                                <canvas id="canvas" class="canvas_overlay d-none">Canvas not supported!</canvas>
+                            </div>
+                        </div>
+                        <div class="h-100 w-100 col col-5 p-0 m-0">
+                            <div id="EvacDataDriveData" class="bg-white opac-85" style="overflow-y: auto">
+                                @* Get Evacuation data drive data for the given mission.  TODO: Get the mission ID. *@
+                                @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "Evacuation" })
+                            </div>
+
+                            @{ if ((bool)TempData.Peek("HasMedComm"))
+                                {
+                                    <div id="MedCommDataDriveData" class="bg-white opac-85 mt-4" style="overflow-y: auto">
+                                        @await Component.InvokeAsync("DataDriveData", new { MissionID = ViewData["MissionID"], team = "MedComm" })
+                                    </div>
+                                }
+                            }
+                            <div id="EvacChat" class="h-100 w-100 border bg-white opac-85 p-2 mt-4" style="overflow: hidden;">
+                                @* Get the chat data from database. *@
+                                @await Component.InvokeAsync("TeamChat", new { MissionID = ViewData["MissionID"] })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @* Get the volcano movie and display it. *@
+            <div id="video" role="tabpanel" class="tab-pane" style="height: 740px">
+                <video width="1080" height="740" controls>
+                    <source src="~/videos/lavaflow.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="questions" role="tabpanel" class="tab-pane bg-white opac-85 p-2" style="height: 740px">
+                @* Display the questions from the HTML file. *@
+                @Html.Raw(ViewBag.PostBrief)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="evacModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-light opac-85">
+            <div class="modal-header">
+                <h5 class="modal-title" id="evacTitle">Evacuation Plan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input type="hidden" id="x" name="x" value="" />
+                    <input type="hidden" id="y" name="y" value="" />
+                    <input type="hidden" id="circleSize" name="circleSize" value="" />
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="evacFrom">Location: </label>
+                        <input type="text" class="p-2 form-control" readonly name="evacFrom" id="evacFrom" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="evacPop">Population: </label>
+                        <input type="text" class="p-2 form-control" name="evacPop" id="evacPop" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="evacTrans">Transportation: </label>
+                        <input type="text" class="p-2 form-control" name="evacTrans" id="evacTrans" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="evacTo">Destination: </label>
+                        <input type="text" class="p-2 form-control" name="evacTo" id="evacTo" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="evacComplete">Evacuation Complete?: </label>
+                        <input type="checkbox" class="p-2 form-control" name="evacComplete" id="evacComplete" value="" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="btnSendEvacData" type="button" class="btn btn-primary" onclick="updateCircle($('#x').val(), $('#y').val(), $('#circleSize').val(), checkBoxChecked())">Save</button>
+            </div>
+            <script>
+                function checkBoxChecked() {
+                    var x = document.getElementById("evacComplete").checked;
+                    if (!x) {
+                        return "#ffff00";
+                    } else {
+                        return "#58FA58";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</div>
+<partial name="_MedCommBulletin" />
+<script src="~/js/evacCanvas.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        InitInterface('@ViewBag.Password');
+    });
+</script>

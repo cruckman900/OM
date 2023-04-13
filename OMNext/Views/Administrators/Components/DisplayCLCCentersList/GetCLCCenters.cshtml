@@ -1,0 +1,30 @@
+﻿@model IEnumerable<OMNext.Models.CLCCenter>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="container">
+    <div class="pt-2 bg-light opac-85" style="float: right;">
+        <h4>CLC Center List</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th class="pl-2 pr-2">CenterName</th>
+                    <th class="pl-2 pr-2">Abbreviation</th>
+                    <th class="pl-2 pr-2">City</th>
+                    <th class="pl-2 pr-2">IsActive</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.CenterName)</td>
+                    <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.Abbreviation)</td>
+                    <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.City)</td>
+                    <td class="pl-2 pr-2">@Html.DisplayFor(modelItem => item.IsActive)</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>

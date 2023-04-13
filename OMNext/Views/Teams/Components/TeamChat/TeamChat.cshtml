@@ -1,0 +1,39 @@
+﻿@model List<OMNext.Models.Chat>
+@using Microsoft.AspNetCore.Http;
+@using OMNext.Helpers;
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h4>Type your message</h4>
+<div class="row">
+    <div class="col">
+        <input type="hidden" id="missionID" />
+        <input type="hidden" id="userInput" value="@ViewData["Team"]" />
+        <input type="hidden" id="sendFromInput" value="@ViewData["Team"]" />
+        <input type="hidden" id="sendToInput" value="FD" />
+        <textarea id="messageInput" class="w-100 bg-light"></textarea>
+    </div>
+</div>
+<div class="float-right">
+    <button id="sendButton" class="btn-warning">Send</button>
+</div>
+<h4>Messages</h4>
+<div class="row">
+    <div class="col">
+        <div class="text-light m-0 p-2" style="background-color: #000000; height: 150px; line-height: normal; overflow-y: scroll; overflow-x: hidden">
+            <ul id="messagesList" class="list-group">
+                @for (int i = Model.Count - 1; i >= 0; i--)
+                {
+                    <li><b>@Model[i].SentDateTime.ToShortTimeString() - From @Model[i].From  To @Model[i].To: </b> @Model[i].Message</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<script>
+    var missionID = @HttpContextAccessor.HttpContext.Session.GetString("MissionID");
+    initGroup(missionID);
+    initTeam("@ViewData["Team"]");
+    document.getElementById("missionID").value = missionID;
+</script>
